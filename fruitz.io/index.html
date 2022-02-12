@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>FRUITZ</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="shortcut icon" href="/assets/images/favicon.ico">
+		<link rel="stylesheet" href="assets/css/main.css?v=3" />
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
+		<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '122849558436282'); // Insert your pixel ID here.
+		fbq('track', 'PageView');
+		const storeClicked = function(store) {
+			fbq('track', 'AddToWishlist', {value: '0', currency: 'USD', content_name: store, content_type: 'app'});
+		}
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=122849558436282&ev=PageView&noscript=1"
+		/></noscript>
+
+	</head>
+	<body style="height: 100vh; display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+
+		<span style="height: 1px; width: 1px;"></span>
+
+		<!-- Header -->
+		<header id="header">
+			<img src="/assets/images/fruits_web_logo.png" width="150">
+			<p>Meet people that are looking<br/>for the same kind of relationship as you</p>
+			<div class="download-links">
+				<a target="_blank" href="https://apps.apple.com/us/app/id1196246520"><img alt="ios download" src="/assets/images/btn_appstore.svg" /></a>
+				<a target="_blank" href="https://play.google.com/store/apps/details?id=com.flashgap.fruitz"><img alt="android download" src="/assets/images/btn_playstore.svg" /></a>
+			</div>
+		</header>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="copyright">
+				<li>&copy; Fruitz</li>
+				<li>2020</li>
+				<li>contact@fruitz.io</li>
+				<li><a href="https://faq.fruitz.io">F.A.Q.</a></li>
+				<li><a href="/privacy">Privacy Policy</a></li>
+				<li><a href="/terms">Terms of Use</a></li>
+			</ul>
+		</footer>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
